@@ -32,7 +32,15 @@
     "node": "16.x"
   },
   "dependencies": {
+    "@chainsafe/libp2p-noise": "^7.0.1",
+    "@libp2p/crypto": "^1.0.0",
+    "@libp2p/mplex": "^3.0.0",
+    "@libp2p/peer-id-factory": "^1.0.15",
+    "@libp2p/websockets": "^3.0.0",
     "cf-socket-client": "^1.0.6",
+    "libp2p": "^0.37.3",
+    "multiaddr": "^10.0.1",
+    "uint8arrays": "^3.0.0",
     "ws": "^8.8.0"
   }
 }
