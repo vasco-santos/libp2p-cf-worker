@@ -1,0 +1,38 @@
+{
+  "name": "libp2p-worker",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/worker.mjs",
+  "author": "Vasco Santos <santos.vasco10@gmail.com>",
+  "scripts": {
+    "build": "node scripts/cli.js build",
+    "dev": "npm run build && miniflare dist/worker.mjs --watch --debug -m",
+    "test": "npm run build && npm run test:worker",
+    "test:worker": "ava --verbose test/*.spec.js",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "dotenv": "^16.0.0",
+    "esbuild": "^0.14.2",
+    "git-rev-sync": "^3.0.1",
+    "miniflare": "2.4.0",
+    "sade": "^1.8.1",
+    "standard": "^17.0.0",
+    "wrangler": "^2.0.8"
+  },
+  "license": "MIT",
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "cf-socket-client": "^1.0.6",
+    "ws": "^8.8.0"
+  }
+}

@@ -1,0 +1,8 @@
+# libp2p-worker wrangler config.
+name = "libp2p-worker"
+main = "./dist/worker.mjs"
+compatibility_date = "2022-05-11"
+
+[build]
+command = "npm run build"
+
